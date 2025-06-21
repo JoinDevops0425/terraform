@@ -8,12 +8,18 @@ variable "instance_type" {
      default = "t2.micro"
 }
 
+variable "common_tags" {
+    default = {
+        Project = "robsoshop"
+        Terraform = "true"
+    }
+}
+
 variable "ec2_tags" {
     type = map(string)
     default = {
-        Name = "Roboshop from Tag"
-        Purpose = "for bettter identifiication"
-
+        Component = "cart"
+        Name = "cart" 
     }
 }
 
@@ -68,3 +74,34 @@ variable "zone_id" {
 variable "domain_name" {
     default = "persistent.sbs"
 }
+
+variable "ingress_ports" {
+    default = [
+        {
+            from_port = 22
+            to_port = 22
+        }, 
+        {
+            from_port = 80
+            to_port = 80
+        }, 
+        {
+            from_port = 443
+            to_port = 443
+        }
+    ]
+}
+
+variable "project" {
+    default = "roboshop"
+}
+
+variable "environment" {
+    default = "dev"
+}
+
+variable "component" {
+    default = "cart"
+}
+
+
