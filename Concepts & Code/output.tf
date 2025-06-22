@@ -2,10 +2,10 @@
   value = aws_instance.roboshop
 } */
 
-output "name" {
-    value = local.final_name
+/* output "name" {
+  value = local.final_name
 }
 
 output "ec2_tag" {
-    value = local.ec2_tags
-}
+  value = local.ec2_tags
+} */
