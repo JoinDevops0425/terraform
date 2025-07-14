@@ -5,3 +5,8 @@ This module is deevloped for joindevops company. Projects inside joindevops foll
 * project (required) = Provide peoject name
 * environment (required) = provide environement name
 * cidr_block (optional) = Default is 11.0.0.0/16, can provide your own values
+
+
+## OUTPUTS
+
+* vpc_id - export vpc id created
