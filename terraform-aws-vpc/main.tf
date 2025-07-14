@@ -1,4 +1,4 @@
-resource "aws_vpc" "roboshop" {
+resource "aws_vpc" "robsohop" {
     cidr_block = var.vpc_cidr_block
     instance_tenancy = "default"
     enable_dns_hostnames = true
